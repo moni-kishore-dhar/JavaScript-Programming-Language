@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toFixed and toPrecision</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        var num = 20;
+
+        document.write(typeof(num));  //Output: number
+
+        document.write("<br>");
+
+        num = toString(num);
+
+        //Converting into string:
+        document.write(typeof(num));  //Output: string
+
+        document.write("<br>");
+
+        var num2 = "40";
+
+        document.write(typeof(num2));  //Output: string
+
+        document.write("<br>");
+
+        ////Converting into number: (for int)
+        num2 = parseInt(num2);
+
+        document.write(typeof(num2));  //Output: number
+
+        document.write("<br>");
+
+        var num3 = "50.54";
+
+        document.write(typeof(num3));  //Output: string
+
+        document.write("<br>");
+
+        //Converting into number: (for float)
+        num3 = parseFloat(num3);
+
+        document.write(typeof(num3));  //Output: number
+
+        document.write("<br><br><br>");
+
+
+
+
+        var number = 2.5478;
+
+        document.write(number);        //Output: 2.5478
+        document.write("<br>");
+
+
+        //It will print two number after decimal:
+        document.write(number.toFixed(2));    //Output: 2.55
+        document.write("<br>");
+
+
+        //It will print toal 2 character:
+        document.write(number.toPrecision(2));       //Output: 2.5
+        document.write("<br>");
+
+
+
+
+
+        //Number Method:
+
+
+        //"12" is converted into a number:
+        document.write(typeof(Number("12")));        //Output: number
+        document.write("<br>");
+
+        document.write(Number("12"));        //Output: 12
+
+        document.write("<br>");
+
+        document.write(Number(true));        //Output: 1
+
+
+        document.write("<br>");
+
+        document.write(Number(false));        //Output: 0
+
+
+
+    </script>
+    
+</body>
+</html>

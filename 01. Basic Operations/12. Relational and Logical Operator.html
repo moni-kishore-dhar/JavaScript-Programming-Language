@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational and Logical Operator</title>
+</head>
+<body>
+
+    <script>
+
+        //Relational Operator:  > , >= , < , <= , == , === , != , !==
+        //Logical Operator:  && , || , !
+
+
+
+        //Relational Operator: 
+
+        var num1 = 20;
+        var num2 = 30;
+
+        document.write(num1>num2);       //Output: False  
+        
+        document.write(num1>=num2);       //Output: False
+        
+        document.write(num1<num2);       //Output:  True
+        
+        document.write(num1<=num2);       //Output:  True
+        
+        document.write(20 == 20);       //Output: True         //Checking the value only 
+
+        document.write(20 == "20");       //Output: True       //Checking the value only 
+   
+        document.write(20 === "20");       //Output:  Flase     //Checking the Datatype with value
+        
+        document.write(20 === 20);       //Output:  True        //Checking the Datatype with value
+   
+        document.write(20 != "20");       //Output:  False     //Checking the value only 
+        
+        document.write(20 !== "20");       //Output:  True      //Checking the Datatype with value
+        
+
+
+
+        document.write("<br><br>");
+
+
+
+        //Logical Operator
+
+
+        var num1 = 20;
+        var num2 = 30;
+        var num3 = 50;
+
+        document.write(num1> num2 && num1< num3);       //Output:  False
+        
+        document.write(num1< num2 || num1>num3 );       //Output:  True
+        
+        document.write(!true);       //Output: False 
+
+        document.write(!false);       //Output: True
+
+        document.write(!(25>22));       //Output: False
+
+        document.write(!(25<22));       //Output:  True
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
