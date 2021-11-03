@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One dimensional array</title>
+</head>
+<body>
+
+    <script>
+        
+        //Create a function called highestScore that will received a 1D array called scores and return the highest score.
+
+
+        function highestScore(scores){
+            var max = scores[0];
+            for(var i=1; i<scores.length; i++){
+                if(max<scores[i])
+                {
+                    max = scores[i];
+                }
+            }
+            return max;
+        }
+
+
+        var scores = [21, 1, 28, 15, 84, 50, 6, 68, 7, 55];
+        var maximumScore = highestScore(scores);
+        document.write(maximumScore);
+
+
+    </script>
+    
+</body>
+</html>

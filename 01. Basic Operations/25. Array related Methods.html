@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array related Methods</title>
+</head>
+<body>
+
+    <script>
+
+        //Push into an Array & Pop from an Array:
+        /*
+        
+        var names = ["Kishor" , "Hridoy" , "Sudmoy" , "Ripon"];
+
+        document.write(names.length + "<br>");       //Size of Array  ( Output: 4 )
+        document.write(names + "<br>");              //Printing whole Array
+
+
+        names.push("Ripa");                          //Push the value at the end of the Array
+
+        document.write(names + "<br>");             //Printing whole Array
+        document.write(names.length + "<br>");      //Size of Array      ( Output: 5 )
+
+        names.push("Puspa"); 
+        names.push("Nipa"); 
+        names.push("Dipa"); 
+
+        document.write(names + "<br>");              //Printing whole Array
+        document.write(names.length + "<br>");      //Size of Array      ( Output: 8 )
+
+        names.pop();                               //Pop the value from the end of the Array
+
+        document.write(names + "<br>");              //Printing whole Array
+        document.write(names.length + "<br>");      //Size of Array      ( Output: 7 )
+
+        names.pop(); 
+        names.pop();
+        names.pop();                     
+
+        document.write(names + "<br>");              //Printing whole Array
+        document.write(names.length + "<br>");      //Size of Array      ( Output: 4 )
+
+        */
+
+
+
+
+        //Concatenation / Merging  of two Arrays:
+        /*
+
+        var country1 = ["Bangladesh", "India" , "Nepal"];
+        var country2 = ["USA" , "Canada" , "Australia"];
+
+        var country = country1.concat(country2);
+
+        document.write(country + "<br>");
+
+        */
+
+
+
+
+        //shift() & unshift():
+        /*
+
+        var names = ["Anis", "Rabeya", "Ripon", "Kshor"];
+        document.write(names + "<br>");
+
+
+        names.shift();                         //Left Shift. Shift is actually POP from the beginning.
+        document.write(names + "<br>");
+
+
+        names.unshift("Hridoy");             //Right Shift will be done here and the value will be entered in the beginning. It is actually Push in the beginning.
+        document.write(names + "<br>");
+
+        */
+
+
+
+
+        //Splice
+
+        /*
+
+        //Adding elements using Splice:
+        var names = ["Anis", "Rabeya", "Ripon", "Kshor"];
+        document.write(names + "<br>");
+        names.splice(2, 0, "Rahim", "Karim", "Liton");          //It will insert three values in index no: 02. No value will remove. The index will start from 0.
+        document.write(names + "<br>");
+        names.splice(3, 2, "Dipa");                            //It will insert one value in index no: 03. 2 values will be removed from index no: 03.
+        document.write(names + "<br><br>");
+
+
+        //Removing elements using Splice:
+        var names2 = ["Anis", "Rabeya", "Ripon", "Kshor", "Rahim", "Karim", "Liton"];
+        document.write(names2 + "<br>");
+        names2.splice(1, 3);                                    //It will remove values from index no: 1 to 3 
+        document.write(names2 + "<br>");
+        
+        */
+
+
+
+
+
+        //Slice:
+
+        /*
+
+        var names = ["Anis", "Rabeya", "Ripon", "Kshor", "Rahim", "Karim", "Liton"];
+        document.write(names + "<br>");
+
+        var newNames = names.slice(2);                     //It will remove two values from the beginning.
+        document.write(newNames + "<br>");
+
+
+        document.write(names + "<br>");
+        var newNames2 = names.slice(2,5);                  //It will take three values from index no: 2 to 4. The index will count from 0.
+        document.write(newNames2 + "<br>");
+
+        */
+
+
+
+
+
+        //Sort:
+
+
+
+
+        //String Sorting: 
+
+        var names = ["Rabeya", "Ripon", "Kshor", "Rahim", "Karim", "Liton", "Bablu", "Anis"];
+        document.write(names + "<br>");
+
+        var sortNames = names.sort();                 //It will sort the array in Alphabetically Ascending order
+        document.write(sortNames + "<br>");
+
+        var reverseNames = names.reverse();          //It will sort the array in Alphabetically Descending order
+        document.write(reverseNames + "<br>");
+
+
+
+        document.write("<br><br>");
+
+
+
+        //Number Sorting:
+
+
+        //Ascending Order:
+        
+        var numbers = [20, 30,50, 10, 15, 90, 60];
+        numbers.sort(function(a,b){
+            return a-b;
+        });
+        document.write(numbers);
+
+
+        document.write("<br>");
+
+
+        //Descending Order:
+        
+        var numbers = [20, 30,50, 10, 15, 90, 60];
+        numbers.sort(function(a,b){
+            return b-a;
+        });
+        document.write(numbers);
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

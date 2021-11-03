@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in javascript</title>
+</head>
+<body>
+
+
+    <script>
+
+        //Object Structure:
+        
+        /*
+        var Object_Name = {
+
+            Property : Value,
+            Property : Value
+
+        }
+        */
+
+
+
+        //Creating an Object
+        
+        /*
+
+        var student = {
+            
+            name : "Kishor Dhar",
+            age : 27,
+            cgpa : 3.40,
+            language : ["Bengali", "English"]
+
+        }
+
+        //Printing the value of an Object:
+
+        document.write(student.name);
+        document.write(student.language);
+        
+        */
+        
+
+
+
+
+        //Template or Constructor:
+
+        function Student(name, age, cgpa, language){
+            this.name = name;
+            this.age = age;
+            this.cgpa = cgpa;
+            this.language = language;
+
+            //Adding Function inside a Constructor or Template:
+
+            this.display = function () {
+                document.write(this.name + "<br>");
+                document.write(this.age + "<br>");
+                document.write(this.cgpa + "<br>");
+                document.write(this.language + "<br>");
+                document.write("<br>");
+
+            }
+        }
+
+
+
+        //Object: 
+
+        var student1 = new Student("Moni Kishore Dhar", 25, 3.40, ["Bengali", "English", "Hindi"]);
+        var student2 = new Student("Kishore Dhar", 24, 3.75, ["Portuguese", "Spanish", "Swedish"]);
+        var student3 = new Student("Kishore Dhar Hridoy", 26, 3.55, ["Nepalese", "German", "French"]);
+
+
+
+
+        //Printing the values:
+
+        document.write(student1.name + "<br>");
+        document.write(student2.age + "<br>");
+        document.write(student3.cgpa + "<br>");
+        document.write(student2.language + "<br><br><br>");
+
+
+        student1.display();
+        student2.display();
+        student3.display();
+
+
+
+
+
+
+
+    </script>
+    
+
+</body>
+</html>

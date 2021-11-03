@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+
+        
+        
+        var names = ["Kishor" , "Hridoy" , "Sudmoy" , "Ripon"];
+        
+        document.write(names.length + "<br>");       //Size of Array  ( Output: 4 )
+        document.write(names + "<br>");              //Printing whole Array
+
+
+
+
+        //Push into an Array & Pop from an Array:
+
+        names.push("Ripa");                          //Push the value at the end of the Array
+
+        document.write(names + "<br>");             //Printing whole Array
+        document.write(names.length + "<br>");      //Size of Array      ( Output: 5 )
+
+        names.push("Puspa"); 
+        names.push("Nipa"); 
+        names.push("Dipa"); 
+
+        document.write(names + "<br>");              //Printing whole Array
+        document.write(names.length + "<br>");      //Size of Array      ( Output: 8 )
+
+        names.pop();                               //Pop the value from the end of the Array
+
+        document.write(names + "<br>");              //Printing whole Array
+        document.write(names.length + "<br>");      //Size of Array      ( Output: 7 )
+
+        names.pop(); 
+        names.pop();
+        names.pop();                     
+
+        document.write(names + "<br>");              //Printing whole Array
+        document.write(names.length + "<br>");      //Size of Array      ( Output: 4 )
+
+
+
+
+        //Concatenation / Merging  of two Arrays:
+
+        var country1 = ["Bangladesh", "India" , "Nepal"];
+        var country2 = ["USA" , "Canada" , "Australia"];
+
+        var country = country1.concat(country2);
+
+        document.write(country + "<br>");
+
+
+
+
+        document.write("<br><br>");
+
+
+
+
+
+
+        //Array with Loop:
+
+
+
+        /*
+
+        var num = [10, 20, 30, 40, 50];
+
+        for(var i=0; i<5; i++){
+            document.write(num[i]+ " ");
+        }
+
+        */
+
+
+        var num = new Array();
+
+        for(var i=1; i<=5; i++)
+        {
+            num[i] = parseInt(prompt("Enter numner " + i + " :" ));
+        }
+
+        document.write("<br><br>");
+
+        var sum = 0;
+
+        for(var i=1; i<=5; i++){
+            document.write(num[i]+ ",");
+            sum = sum + num[i];
+        }
+        
+        document.write("<br>");
+        document.write("Total: " + sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+    
+    </script>
+
+</body>
+</html>

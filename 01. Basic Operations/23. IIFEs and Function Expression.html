@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIFEs and Function Expression</title>
+</head>
+<body>
+
+    <script>
+
+        //IIFEs => Immediately Invokeable Function Expression
+
+        //It will call automatically and immediately while loading.  It does not need to call.
+        
+
+        (
+            function display(message)
+            {
+                document.write("Hello!!<br>");
+                document.write(message + "<br>");
+            }
+        )("This is IIFEs");
+
+
+        (
+            function summation(num1, num2)
+            {
+                var result = num1 + num2;
+                document.write("Result =" + result + "<br>");
+            }
+        )(8,7);
+
+
+
+
+
+
+
+        //Function Expression:  
+
+
+        var display2 = function displayMessage(message)
+        {
+            document.write(message);
+        };
+
+        display2("This is a message");
+
+
+
+
+    </script>
+    
+
+
+</body>
+</html>
