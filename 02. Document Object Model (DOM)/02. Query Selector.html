@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+
+
+
+    <!--     First:      -->
+    <!-- 
+
+    <p id="pid">This is a Paragraph 1</p>
+
+    <p class="pid">This is a Paragraph 2</p>
+
+    <h1 id="hid">This is heading 1</h1>
+
+    <h1 class="hid">This is heading 2</h1>
+
+    <p id="pid_3">This is a Paragraph 3</p>
+
+    -->
+
+
+
+
+
+    <!--     Second:      -->
+    <!--     
+
+    <a href="#">Home</a>
+
+    <ul>
+        <li><a href="#">Tutorial</a></li>
+        <li><a href="#">Bangladesh</a></li>
+    </ul>
+
+    <div class="my-div">
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="my-id">
+        <a href="#">About</a>
+    </div>
+
+
+    -->
+
+
+
+
+
+    <!--     Third:      -->
+
+
+    <p>This is Paragraph 1</p>
+    <p>This is Paragraph 2</p>
+
+    <h1>This is Heading 1</h1>
+    <h1>This is Heading 2</h1>
+
+
+
+    <div class="my-div">
+        <a href="#">This is my-div Class 1</a>
+    </div>
+
+    <div class="my-div">
+        <a href="#">This is my-div Class 2</a>
+    </div>
+
+    <div class="my-div">
+        <a href="#">This is my-div Class 3</a>
+    </div>
+
+
+
+
+
+
+    <script>
+
+
+
+        //Query Selector:
+
+        //First:
+        /*
+
+        document.querySelector("#pid").innerHTML = "This is a modified Paragraph 1 by using id";                        //'#' is used to select ID.
+
+        document.querySelector(".pid").innerHTML = "This is a modified Paragraph 2 by using class";                     //'.' is used to select Class.
+
+        document.querySelector("#hid").innerHTML = "This is a modified Heading 1 by using id";                          //'#' is used to select ID.
+
+        document.querySelector(".hid").innerHTML = "This is a modified Heading 2 by using class";                       //'.' is used to select Class.
+
+        document.querySelector("p").innerHTML = "This is a modified paragraph 1 by using tag name";                    //'Tag Name' is used to select Tag Name.
+
+        //document.querySelector("h1").innerHTML = "This is a modified heading 1 by using tag name";                   //'Tag Name' is used to select Tag Name.
+
+        document.querySelector("#pid_3").innerHTML = "This is a modified Paragraph 3 by using id";
+
+        */
+
+
+
+
+
+        //Second:
+        /*
+
+        document.querySelector("a").innerHTML = "Modified Home";
+
+        document.querySelector("li a").innerHTML = "Modified Tutorial";                       //"a" under the "li" is selected
+
+        //document.querySelector("div a").innerHTML = "Modified Contact";                     //"a" under the "div" is selected
+
+        document.querySelector(".my-div a").innerHTML = "Modified Contact";                  //"a" under the "my-div" class is selected
+
+        document.querySelector("#my-id a").innerHTML = "Modified About";                     //"a" under the "my-div" id is selected
+        
+        */
+
+
+
+
+
+        //Third
+        //Query Selector All:  (querySelectorAll is used to select multiple elements of the same tag or class name by using an index number.)
+
+        document.querySelectorAll("p")[0].innerHTML = "This is Modified Paragraph 1";
+        
+        document.querySelectorAll("p")[1].innerHTML = "This is Modified Paragraph 2";
+
+        document.querySelectorAll("h1")[0].innerHTML = "This is Modified Headng 1";
+
+        document.querySelectorAll("h1")[1].innerHTML = "This is Modified Headng 2";
+
+        
+        document.querySelectorAll(".my-div a")[0].innerHTML = "This is modified my-div Class 1";
+
+        document.querySelectorAll(".my-div a")[1].innerHTML = "This is modified my-div Class 2";
+
+        document.querySelectorAll(".my-div a")[2].innerHTML = "This is modified my-div Class 3";
+
+      
+
+
+
+    </script>
+    
+</body>
+</html>

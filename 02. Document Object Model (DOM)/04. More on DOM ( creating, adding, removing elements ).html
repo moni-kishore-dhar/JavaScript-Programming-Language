@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on DOM ( creating, adding, removing elements )</title>
+</head>
+<body>
+
+    <a href="#">Visit Google</a>
+
+
+
+    <div id="my-div" style="background-color: blueviolet;">
+        <h1>heading 1 from my-div class</h1>
+        <h1>heading 2 from my-div class</h1>
+    </div>
+
+
+
+    
+    
+    <script>
+
+        var link = document.getElementsByTagName("a")[0];          //To find or get the HTML element
+
+        link.innerHTML = "Modified Visit Google";                  //It helps to change the HTML content
+        link.style.textDecoration = "none";                        //It helps to change the style of HTML elements
+        link.style.color = "green";                                //It helps to change the style of HTML elements
+        link.style.fontSize = "2rem";                              //It helps to change the style of HTML elements
+        link.href = "https://google.com";                          //It helps to change the "href" of HTML elements 
+
+
+
+
+        var heading1 = document.getElementsByTagName("h1")[0];    //To find or get the HTML element
+        
+        heading1.innerHTML = "This is modified heading 1 from my-div class";
+
+
+
+
+        //Creating the HTML elements from JavaScript:
+
+        var heading3 = document.createElement("h1");                 //To create HTML element
+        var text = document.createTextNode("heading 3 from my-div class creating in JavaScript");                  //To create Text
+        heading3.appendChild(text);                                 //To add the Text with heading3 element
+
+        var myDiv = document.getElementById("my-div");              //To find the my-div class
+        myDiv.appendChild(heading3);                                //To add the heading3 element with my-div      
+        
+        
+
+
+
+
+        //Removing the HTML elements from JavaScript:
+
+        var heading2 = document.getElementsByTagName("h1")[1];      //To find or get the element which will remove
+        var myDiv = document.getElementById("my-div");              //To find the my-div class
+        myDiv.removeChild(heading2);                                //To remove the heading2 element from myDiv class
+
+
+
+
+
+        //Adding the HTML elements in a particular position:
+
+        var heading4 = document.createElement("h1");                 //To create HTML element
+        var text1 = document.createTextNode("heading 4 from my-div class creating in JavaScript");                  //To create Text
+        heading4.appendChild(text1);                                 //To add the text1 with heading4 element
+
+        var myDiv = document.getElementById("my-div");              //To find the my-div class
+        var heading2 = document.getElementsByTagName("h1")[1];      //To find or get the element, heading4 will be added before it
+        myDiv.insertBefore(heading4, heading2);                     //To add the heading4 element before heading2 element with my-div      
+        
+        
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler to onclick event</title>
+</head>
+<body>
+
+
+    <!--   <button onclick="alert('Hello!!')">Click Me</button>   -->
+
+
+
+    <button onclick="myMessage1()">Click Me 1</button>
+    <button onclick="myMessage2()">Click Me 2</button>
+
+
+
+    <br><br>
+
+
+
+    <p onclick="myMessage3()">Hello Everyone</p>
+    
+
+
+    <br>
+
+
+
+    <button onclick="myMessage4()">Click Me 3</button>
+
+
+
+    <br><br>
+
+
+
+    <p id="para-id">It's a Simple Paragraph</p>
+
+    <button onclick="myMessage5()">Button 1</button>
+    <button onclick="myMessage6()">Button 2</button>
+
+
+
+    <br><br><br>
+
+
+    
+    <button onclick="myPicture1()">Show Image 1</button>
+    <button onclick="myPicture2()">Show Image 2</button>
+    
+    <br><br>
+    
+    <img id="myImageId" src="images/default_image.jpg" alt="" height="300" width="300">
+
+
+    
+    
+    
+
+
+    <script>
+
+        function myMessage1(){
+            alert("This is a Button 1");
+        }
+
+        function myMessage2(){
+            alert("This is a Button 2");
+        }
+
+
+
+
+
+        function myMessage3(){
+            alert("This is a Paragraph");
+        }
+
+
+
+
+
+        function myMessage4(){
+            document.write("Hello....!! <br> This is a Document");
+            
+        }
+
+
+
+
+
+        myParagraph = document.querySelector("#para-id");
+        
+        function myMessage5(){
+            myParagraph.innerHTML = "This paragraph is modified by Button 1"; 
+        }
+
+        function myMessage6(){
+            myParagraph.innerHTML = "This paragraph is modified by Button 2"; 
+        }
+
+
+
+
+
+        var myPicture = document.querySelector("#myImageId");
+        
+        function myPicture1(){
+            myPicture.src = "images/image_1.jpg";
+        }
+
+        function myPicture2(){
+            myPicture.src = "images/image_2.jpg";
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

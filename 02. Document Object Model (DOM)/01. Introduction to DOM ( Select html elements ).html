@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to DOM ( Select html elements )</title>
+</head>
+<body>
+
+
+    <h1 id = "heading 1"> This is heading 1</h1>
+
+
+    <h1 id = "heading 2"> This is heading 2</h1>
+
+
+    <p id = "para">This is a Paragraph 1</p>
+
+
+    <p> This is Paragraph 2</p>
+
+
+    <h1 class="para">This is Heading 3</h1>
+
+
+    <p class="para">This Paragraph 3</p>
+
+
+    <h1 class="para">This is Heading 4</h1>
+
+
+    <p class="para">This Paragraph 4</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        //getElementById:
+
+        //document.getElementById("heading 1").innerHTML = ("Hello!! This is modified heading 1 by using getElementById()");
+
+        var myHeading = document.getElementById("heading 1");
+        myHeading.innerHTML = ("Hello!! This is modified heading 1 by using getElementById()");
+
+        document.getElementById("para").innerHTML = ("Hello!! This is modified Paragraph 1 by using getElementById()");
+
+        document.getElementById("heading 2").innerHTML = ("Hello!! This is modified heading 2 by using getElementById()");
+
+
+
+
+
+        //getElementsByTagName:  (  There can be multiple elements with the same tag name. So, an index number is used to make the difference between them. )
+
+        document.getElementsByTagName("h1")[0].innerHTML = ("Hello!! This is modified heading 1 by using getElementsByTagName()");                 
+
+        document.getElementsByTagName("p")[1].innerHTML = ("Hello!! This is modified paragraph 2 by using getElementsByTagName()");
+
+
+
+
+
+        //getElementsByClassName:   (  There can be multiple elements with the same class name. So, an index number is used to make the difference between them.  )
+
+        document.getElementsByClassName("para")[0].innerHTML = ("Hello!! This is modified heading 3 by using getElementsByClassName()");
+
+        document.getElementsByClassName("para")[3].innerHTML = ("Hello!! This is modified paragraph 4 by using getElementsByClassName()");
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
